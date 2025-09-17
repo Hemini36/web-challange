@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personal Mood Tracker</h1>
+        <p>Track your mood daily and see your emotional trends!</p>
+    </header>
+
+    <section class="mood-form">
+        <h2>How are you feeling today?</h2>
+        <form id="moodForm">
+            <label for="mood">Select your mood:</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="neutral">Neutral</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="mood-history">
+        <h2>Your Mood History</h2>
+        <div id="history"></div>
+        <canvas id="moodChart"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mood Tracker App. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
